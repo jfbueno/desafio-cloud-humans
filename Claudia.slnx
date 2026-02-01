@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".env" />
+    <File Path=".env.example" />
+    <File Path=".gitignore" />
+    <File Path="docker-compose.yaml" />
+    <File Path="Dockerfile" />
+    <File Path="readme.md" />
+    <File Path="todo.md" />
+  </Folder>
+  <Project Path="Claudia.Tests/Claudia.Tests.csproj" Id="722e1cd7-d8a8-4876-a13f-2333e90666d3" />
+  <Project Path="ClaudiaWebApi/ClaudiaWebApi.csproj" />
+</Solution>
