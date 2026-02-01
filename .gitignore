@@ -1,0 +1,12 @@
+# Visual Studio config files
+.vs/
+*.user
+
+
+# .NET Core build folders
+bin/
+obj/
+
+# Local development config files that may contain sensitive information
+appsettings.Local.json
+.env
