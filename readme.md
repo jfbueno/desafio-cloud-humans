@@ -59,6 +59,9 @@ A aplicação conta com um controlador global de exceções não tratadas. A pri
 
 Foi implementado um mecanismo global para controle de tenants. A ideia desse mecanismo é poder injetar informações do cliente (tenant) em qualquer ponto da aplicação sem precisar passá-lo como parâmetro. O contexto de tenant é instanciado antes de executar qualquer endpoint (via action filter, `TenantContextActionFilter`) e assume que todas as requisições específicas de um tenant contenham os campos `HelpdeskId` e `ProjectName` no corpo da requisição. Essa implementação pode ser melhorada fazendo com que as informações do cliente sejam recebidas por um header HTTP - fazendo com que não seja necessário ler o corpo da requisição.
 
+#### Métricas
+
+A aplicação também conta com instrumentação de métricas via Open Telemetry. Pela simplicidade e foco no escopo não fiz a integração com ferramentas de coleta e visualização.
 
 
 
