@@ -3,9 +3,6 @@ using System.Text.Json;
 
 namespace ClaudiaWebApi.Infra.OpenAI;
 
-/// <summary>
-/// Interface for interacting with the OpenAI API.
-/// </summary>
 public interface IOpenAIClient
 {
     Task<GetEmbeddingsResponse> GetEmbeddings(GetEmbeddingsRequest request);

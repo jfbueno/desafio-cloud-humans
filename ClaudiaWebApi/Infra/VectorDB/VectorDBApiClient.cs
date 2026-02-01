@@ -3,6 +3,11 @@ using System.Text.Json;
 
 namespace ClaudiaWebApi.Infra.VectorDB;
 
+public interface IVectorDBApiClient
+{
+    Task<GetVectorsResponse> SearchDocsFromVector(GetVectorsRequest request);
+}
+
 /// <summary>
 /// HTTP Client for interacting with a vector database API.
 /// Provides methods for performing document search operations based on similarity.
